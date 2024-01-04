@@ -1,0 +1,221 @@
+  /*site thème crème*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+  *{
+      margin : 0;
+      padding : 0;
+
+  }
+
+.navbar{
+  position:absolute;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 100;
+
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .navlinks ul{
+  display: flex;
+  justify-content: center;
+
+}
+
+.navbar .navlinks ul li{
+  margin: 0 30px;
+}
+
+
+body{
+  font-family: 'Kanit';
+}
+
+.slider
+ {
+  width: 100%;
+  height: 80vh;
+  background-color: black;
+  position: relative;
+
+ }
+
+.slider-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter:blur(2px);
+}
+
+.slider-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+h1{
+  color: #FFF;
+  font-size: 5rem;
+}
+
+h1 span{
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.8s 0.2s ease-out forwards;
+
+}
+
+
+p span{
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: apparition 0.8s 0.4s ease-out forwards;
+}
+
+
+.slider-content p{
+  color: #FFF;
+  font-size: 2rem;
+  font-weight: 300;
+  
+}
+
+.section{
+  padding: 100px 0;
+}
+
+.propos{
+  max-width: 1200px;
+}
+
+
+.boxed{
+  margin-inline: auto;
+}
+
+.container_competences{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.w40{
+  width: 40%;
+}
+
+.w60{
+  width: 60%;
+}
+
+
+h2{
+  font-size: 3rem;
+}
+
+p{
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+.dark{
+  background: black;
+  color: #FFF;
+}
+
+.text-center{
+  text-align: center;
+  opacity: 0;
+  transition: transform 1s ease, opacity 1s ease; /* Durée et type d'animation */
+
+}
+
+.text-center.active{
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.w25{
+  width: 50%;
+}
+
+.skill{
+  display: flex;
+  border-radius: 15px;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.container{
+  background-color: gray;
+  padding: 10%;
+  border-radius: 15%;
+  margin-right: 30px;
+}
+
+
+.images_icones{
+  width: 100px;
+  height: 100px;
+}
+
+.images{
+  width: 50px;
+  height: 50px;
+}
+
+.contacts{
+  display: flex;
+  justify-content: center; /* Centrer les éléments horizontalement */
+  align-items: center; /* Centrer les éléments verticalement */
+  flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne suivante si nécessaire */
+}
+
+.contacts > *{
+  margin: 0 10px;
+}
+
+@keyframes apparition{
+  100%{
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-container {
+    flex-direction: column; /* Les éléments s'afficheront en colonne sur des écrans plus petits */
+  }
+}
+
+
+/* Personnaliser la barre de défilement entière */
+.skill::-webkit-scrollbar {
+  width: 12px; /* Largeur de la barre de défilement */
+}
+
+/* Personnaliser le fond de la piste de défilement */
+.skill::-webkit-scrollbar-track {
+  background: rgb(21, 21, 21);
+}
+
+/* Personnaliser le bouton de défilement (thumb) */
+.skill::-webkit-scrollbar-thumb {
+  background: #555; /* Couleur du thumb */
+  border-radius: 6px; /* Arrondir les coins */
+}
+
+/* Modifier la couleur du thumb lors du survol ou du clic */
+.skill::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Couleur du thumb au survol */
+}
