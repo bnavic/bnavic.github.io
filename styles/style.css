@@ -295,3 +295,21 @@ p{
     width: 100%;
   }
 }
+
+.test{
+  opacity: 0;
+  visibility: hidden; 
+  width: 0;
+  height: 0;
+  overflow: hidden; /* Empêche le débordement de tout contenu */
+  transition: opacity 0.3s ease, visibility 0.3s ease, width 0.3s ease, height 0.3s ease;
+  margin-right: 0; /* Supprime la marge initiale */
+}
+
+.container_projet:hover .test{
+  opacity: 1;
+  visibility: visible;
+  width: auto; /* ou spécifiez une largeur fixe si nécessaire */
+  height: auto; /* ou spécifiez une hauteur fixe si nécessaire */
+  margin-right: 10px;
+}
