@@ -1,6 +1,4 @@
-  /*site thème crème*/
-
-  @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
   *{
       margin : 0;
       padding : 0;
@@ -117,6 +115,9 @@ p span{
   width: 60%;
 }
 
+.w25{
+  width: 100%;
+}
 
 h2{
   font-size: 3rem;
@@ -135,8 +136,7 @@ p{
 .text-center{
   text-align: center;
   opacity: 0;
-  transition: transform 1s ease, opacity 1s ease; /* Durée et type d'animation */
-
+  transition: transform 1s ease, opacity 1s ease;
 }
 
 .text-center.active{
@@ -144,9 +144,7 @@ p{
   opacity: 1;
 }
 
-.w25{
-  width: 50%;
-}
+
 
 .skill{
   display: flex;
@@ -161,6 +159,12 @@ p{
   padding: 10%;
   border-radius: 15%;
   margin-right: 30px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 
@@ -176,9 +180,9 @@ p{
 
 .contacts{
   display: flex;
-  justify-content: center; /* Centrer les éléments horizontalement */
-  align-items: center; /* Centrer les éléments verticalement */
-  flex-wrap: wrap; /* Permettre aux éléments de passer à la ligne suivante si nécessaire */
+  justify-content: center; 
+  align-items: center; 
+  flex-wrap: wrap;
 }
 
 .contacts > *{
@@ -194,28 +198,48 @@ p{
 
 @media (max-width: 600px) {
   .skills-container {
-    flex-direction: column; /* Les éléments s'afficheront en colonne sur des écrans plus petits */
+    flex-direction: column; 
   }
 }
 
 
-/* Personnaliser la barre de défilement entière */
 .skill::-webkit-scrollbar {
-  width: 12px; /* Largeur de la barre de défilement */
+  width: 12px; 
 }
 
-/* Personnaliser le fond de la piste de défilement */
 .skill::-webkit-scrollbar-track {
   background: rgb(21, 21, 21);
 }
 
-/* Personnaliser le bouton de défilement (thumb) */
 .skill::-webkit-scrollbar-thumb {
-  background: #555; /* Couleur du thumb */
-  border-radius: 6px; /* Arrondir les coins */
+  background: #555; 
+  border-radius: 6px; 
 }
 
-/* Modifier la couleur du thumb lors du survol ou du clic */
 .skill::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Couleur du thumb au survol */
+  background: #555; 
 }
+
+.dots {
+  display: flex;
+  justify-content: center; /* Center the dots horizontally */
+  align-items: center;
+  margin-top: 10px; /* Add space between the image and the dots */
+}
+
+.vert{
+  background-color : green;
+}
+
+.rouge{
+  background-color: red;
+}
+
+.dots span {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block; /* Change to inline-block for proper alignment */
+  margin: 5px;
+}
+
