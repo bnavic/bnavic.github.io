@@ -8,3 +8,10 @@ window.addEventListener('scroll',()=>{
     if(scrollTop > (scrollTop + elementTop).toFixed() - clientHeight *0.50)
     slide.classList.add('active')
 })
+
+const menuHamburger = document.querySelector(".menu-burger")
+        const navLinks = document.querySelector(".navlinks")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
