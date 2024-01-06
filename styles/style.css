@@ -374,5 +374,9 @@ p{
   .flex{
     padding: 0 40px;
   }
-  
+}
+
+.texteur{
+  align-items: center;
+  padding: 0 20px;
 }
