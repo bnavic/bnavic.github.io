@@ -317,10 +317,11 @@ p{
 }
 
 .container_projets {
+
   position: relative;
   display: flex;
   justify-content: center; /* Centre horizontalement les éléments */
-  align-items: center; /* Centre verticalement les éléments sur plusieurs lignes */
+  align-items: stretch; /* Centre verticalement les éléments sur plusieurs lignes */
   flex-wrap: wrap;
   gap: 20px; /* Espace uniforme entre les éléments */
 }
@@ -356,6 +357,9 @@ p{
 }
 
 .container_projet img{
+  max-width: 100%;
+  margin: auto  ;
+  object-fit: cover;
   z-index: 1;
   position: relative;
 }
@@ -364,4 +368,11 @@ p{
 .container_projet:hover{
   opacity: 1;
   height: auto;
+}
+
+@media (max-width:1280px) {
+  .flex{
+    padding: 0 40px;
+  }
+  
 }
