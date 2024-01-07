@@ -9,9 +9,23 @@ window.addEventListener('scroll',()=>{
     slide.classList.add('active')
 })
 
+
+
 const menuHamburger = document.querySelector(".menu-burger")
         const navLinks = document.querySelector(".navlinks")
  
         menuHamburger.addEventListener('click',()=>{
         navLinks.classList.toggle('mobile-menu')
         })
+
+const btn = document.querySelector('.btn');
+
+btn.addEventListener('click', () => {
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+    })
+
+})
