@@ -416,3 +416,12 @@ p{
 .icone {
   width: 50px;
 }
+
+.download{
+
+  color: #ddd;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 20px;
+  padding: 5px;
+}
