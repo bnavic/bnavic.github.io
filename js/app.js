@@ -11,6 +11,7 @@ window.addEventListener('scroll',()=>{
 
 
 
+
 const menuHamburger = document.querySelector(".menu-burger")
         const navLinks = document.querySelector(".navlinks")
  

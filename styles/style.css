@@ -120,7 +120,7 @@ h1 span{
 
 }
 
-p{
+.nsm{
   text-align: center;
 
 }
@@ -327,7 +327,11 @@ p{
   padding: 20px;
   border-radius: 10px; /* Coins arrondis */
   transition: transform 0.3s ease-in-out; /* Transition fluide pour le hover */
-  
+}
+
+.container_projet.active{
+  transform: translateX(0%);
+  opacity: 1;
 }
 
 .container_projets {
