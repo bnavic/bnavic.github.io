@@ -68,7 +68,7 @@
   }
 
   .navbar .navlinks ul li{
-    margin: 30 0px;
+    margin: 30px;
     font-size: 1.5em;
   }
 }
@@ -237,9 +237,9 @@ p{
 }
 
 .container_competences img {
-  max-width: 100%; /* Limite la largeur maximale de l'image à 100% du conteneur */
-  height: auto; /* Ajuste la hauteur automatiquement pour conserver l'aspect ratio */
-  object-fit: contain; /* Ajuste l'image à l'intérieur du conteneur sans la couper */
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .images_icones{
@@ -298,9 +298,9 @@ p{
 
 .dots {
   display: flex;
-  justify-content: center; /* Center the dots horizontally */
+  justify-content: center;
   align-items: center;
-  margin-top: 10px; /* Add space between the image and the dots */
+  margin-top: 10px;
 }
 
 .vert{
@@ -315,18 +315,20 @@ p{
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  display: inline-block; /* Change to inline-block for proper alignment */
+  display: inline-block;
   margin: 5px;
 }
 
 .container_projet {
-  width: 30%; /* Ajustez selon la mise en page */
-  background-color: #f5f5f5; /* Couleur de fond claire */
-  border: 1px solid #ddd; /* Bordure subtile */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre légère pour la profondeur */
+  text-decoration: none;
+  color: black;
+  width: 30%;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 20px;
-  border-radius: 10px; /* Coins arrondis */
-  transition: transform 0.3s ease-in-out; /* Transition fluide pour le hover */
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .container_projet.active{
@@ -338,14 +340,14 @@ p{
 
   position: relative;
   display: flex;
-  justify-content: center; /* Centre horizontalement les éléments */
-  align-items: stretch; /* Centre verticalement les éléments sur plusieurs lignes */
+  justify-content: center;
+  align-items: stretch;
   flex-wrap: wrap;
-  gap: 20px; /* Espace uniforme entre les éléments */
+  gap: 20px;
 }
 
 .container_projet:hover {
-  transform: scale(1.05); /* Effet de zoom léger au survol */
+  transform: scale(1.05);
 }
 
 .container_projets.active{
@@ -368,10 +370,10 @@ p{
 
 .test{
   display: block;
-  position: absolute;   /* positionnement hors flux */
-  left: -100%;          /* décalage à gauche toute */
-  padding: 0 .25em;     /* un peu d'espace latéral */
-  transition: all .5s;  /* la transition à appliquer */
+  position: absolute;
+  left: -100%;
+  padding: 0 .25em;
+  transition: all .5s;
 }
 
 .container_projet img{
@@ -418,10 +420,13 @@ p{
 }
 
 .download{
-
   color: #ddd;
   text-decoration: none;
   background-color: black;
   border-radius: 20px;
+  padding: 5px;
+}
+
+#text{
   padding: 5px;
 }

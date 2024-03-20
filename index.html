@@ -31,10 +31,10 @@
         <div class="boxed propos">
             <div class="flex">
                 <div class="w40">
-                    <h2>à propos de moi</h2>
+                    <h2>A propos de moi</h2>
                 </div>
                 <div class="w60">
-                    <p>Diplômé du BAC Technologique STI2D ITEC, maintenant en seconde année d'informatique à l'IUT de Montpellier et passionné depuis quelques temps par les intelligences artificielles, j'espère pouvoir travailler dans ce domaine dans un futur proche.</p>
+                    <p id="text">Diplômé du BAC Technologique STI2D ITEC, maintenant en seconde année d'informatique à l'IUT de Montpellier et passionné depuis quelques temps par les intelligences artificielles, j'espère pouvoir travailler dans ce domaine dans un futur proche.</p>
                 </div>
                 <a class="download" href="documents/CV_BENA-Victor.pdf" download="CV_BENA-Victor.pdf">Téléchargez mon CV ici</a>
             </div>
@@ -46,42 +46,42 @@
             <div class="container_competences"> 
                 <div class="w25 skill" >
                     <div class="container">
-                        <img src="images/javapng.png" class="images_icones" draggable="false">
+                        <img src="images/javapng.png" class="images_icones" draggable="false" alt="java">
                         <h3>java</h3>
                         <div class="dots">
                             <span class="dot vert"></span><span class="dot vert"></span><span class="dot vert"></span><span class="dot vert"></span><span class="dot rouge"></span>
                         </div>
                     </div>
                     <div class="container">
-                        <img src="images/python.png" class="images_icones" draggable="false">
+                        <img src="images/python.png" class="images_icones" draggable="false" alt="python">
                         <h3>python</h3>
                         <div class="dots">
                             <span class="dot vert"></span><span class="dot vert"></span><span class="dot vert"></span><span class="dot vert"></span><span class="dot rouge"></span>
                         </div>
                     </div>
                     <div class="container">
-                        <img src="images/htmlpng.png" class="images_icones" draggable="false">
+                        <img src="images/htmlpng.png" class="images_icones" draggable="false" alt="HTML">
                         <h3>htlm/css</h3>
                         <div class="dots">
                             <span class="dot vert"></span><span class="dot vert"></span><span class="dot vert"></span><span class="dot rouge"></span><span class="dot rouge"></span>
                         </div>
                     </div>
                     <div class="container">
-                        <img src="images/php.png" class="images_icones" draggable="false">
+                        <img src="images/php.png" class="images_icones" draggable="false" alt="PHP">
                         <h3>PHP</h3>
                         <div class="dots">
                             <span class="dot vert"></span><span class="dot vert"></span><span class="dot vert"></span><span class="dot rouge"></span><span class="dot rouge"></span>
                         </div>
                     </div>
                     <div class="container">
-                        <img src="images/c.png" class="images_icones" draggable="false">
+                        <img src="images/c.png" class="images_icones" draggable="false" alt="C">
                         <h3>C</h3>
                         <div class="dots">
                             <span class="dot vert"></span><span class="dot vert"></span><span class="dot rouge"></span><span class="dot rouge"></span><span class="dot rouge"></span>
                         </div>
                     </div>
                     <div class="container">
-                        <img src="images/git.png" class="images_icones" draggable="false">
+                        <img src="images/git.png" class="images_icones" draggable="false" alt="github">
                         <h3>Maîtrise de git</h3>
                         <div class="dots">
                             <span class="dot vert"></span><span class="dot vert"></span><span class="dot vert"></span><span class="dot vert"></span><span class="dot rouge"></span>
@@ -94,48 +94,57 @@
     <div class="section claire">
         <div class="boxed center-text" id="Projets">
             <h2>Projets réalisés</h2>
+
             <div class="container_projets" >
-                    <div class="container_projet">
-                        <img src="images/aventurierrail.jpeg" class = "images_projets">
+                <a  class="container_projet" href="aventurier.html" draggable="false">
+                    <div>
+                        <img src="images/aventurierrail.jpeg" class = "images_projets" alt="Aventurier du Rail" draggable="false">
                         <h3>Aventuriers du rail</h3>
-                        <span>Ce projet était un travail donné par l'IUT, qui consistait à faire le jeu "Les aventuriers du rail : Monde" en java/JavaFX par duo. Nous avons dû apprendre pour cela la théorie des graphes ainsi que faire des graphismes en JavaFX. Nous avions eu carte blanche pour concevoir et développer le jeu, ce qui nous a permis d'exprimer notre créativité et d'appliquer nos compétences techniques de manière innovante.
 
-                            Nous avons commencé par étudier la théorie des graphes pour gérer efficacement les réseaux de chemins de fer et les connexions entre différentes villes sur la carte du jeu. Cela impliquait non seulement de comprendre les concepts fondamentaux des graphes, mais aussi de les implémenter efficacement dans notre code pour que le jeu soit à la fois fonctionnel et performant.
-                            
-                            En parallèle, nous avons travaillé sur les graphismes en JavaFX. C'était un défi intéressant de créer une interface utilisateur attrayante et intuitive qui reflète l'essence du jeu tout en étant facile à naviguer pour les joueurs. Nous avons conçu des éléments graphiques personnalisés, des animations et des interactions pour rendre l'expérience de jeu aussi engageante que possible. </span>
 
                     </div>
-                    <div class="container_projet">
-                        <img src="images/binaire.png" class="images_projets">
+                </a>
+
+                <a href="algorithme.html" class="container_projet" draggable="false">
+                    <div>
+                        <img src="images/binaire.png" class="images_projets" alt="Algorithme binaire" draggable="false">
                         <h3>Algorithme de relation binaire</h3>
-                            <span>Durant ce travail de SAE, nous avions dû créer un algorithme de relation binaire en nous aidant de nos connaissances en maths par groupe de 2. Cela a impliqué l'application de concepts mathématiques tels que la théorie des ensembles, la logique et la théorie des graphes pour structurer et résoudre le problème. Mon partenaire et moi avons collaboré étroitement pour développer un algorithme efficace qui pouvait non seulement établir des relations binaires entre les différents éléments du jeu, mais aussi les manipuler de manière à répondre aux exigences spécifiques du projet. Nous avons dû penser de manière analytique et créative pour concevoir une solution qui non seulement fonctionnait bien, mais était aussi optimisée en termes de performance et de facilité d'utilisation. Cette expérience a été extrêmement enrichissante, car elle nous a permis de lier directement les concepts mathématiques à leurs applications pratiques en programmation.</span>
                     </div>
-                    <div class="container_projet">
-                        <img src="images/ndl2022.png" class="images_projets">
-                        <h3>Nuit de l'Info 2022</h3>
-                        <span>Cet évènement était réalisé dans la France entière. Elle consiste à rassembler une équipe et travailler pendant une nuit sur un site web, avec certains défis à relever. Le thème de cet évènement était la lutte contre les MST. Pendant cet évènement, nous avons dû faire un site web sur un thème précis, où des gens pouvaient naviguer. La création de ce site nous à demandé le temps entier de l’évènement. Nous y avons investi beaucoup d'efforts, étant donné que nous étions tous néophytes dans l’informatique. Nous avons utilisé le HTML et le CSS pour créer une interface basique qu’un utilisateur pouvait utiliser sans trop de problème. </span>
+                </a>
+                <a class="container_projet" href="ndl.html" draggable="false">
+                    <div>
+                        <img src="images/ndl2022.png" class="images_projets" alt="Nuit de l'Info" draggable="false">
+                        <h3>Nuit de l'Info 2022 et 2023</h3>
+                    </div>
+                </a>
+                <a class="container_projet" href="cgj.html" draggable="false">
+                    <div>
+                        <img src="images/cjg.png" class = "images_projets" alt="Code Game Jam" draggable="false">
+                        <h3>Code Game Jam 2023 et 2024</h3>
+                    </div>
+                </a>
 
-                    </div>
-                    
-                    <div class="container_projet">
-                        <img src="images/cjg.png" class = "images_projets">
-                        <h3>Code Game Jam 2023</h3>
-                        <span>Cet évènement était réalisé par l'IUT et durant 3 jours, nous devions préparer un jeu vidéo sur le thème du temps. Le travail de groupe était à privilégier et chacun occupait un rôle dans ce projet. Nous avons tous pu expérimenter comment se déroulait la création d’un jeu par nous-même, en nous aidant et en donnant à chaque personne un rôle important à tenir. Le fait de découvrir comment créer un jeu alors que personne dans le groupe en avait la moindre idée nous a permis de nous surpasser, d'apprendre rapidement de nouvelles compétences et de développer notre créativité collective. Nous avons dû faire preuve de collaboration, de communication et de résolution de problèmes pour surmonter les obstacles et aboutir à un jeu à peu près fonctionnel. Cette expérience nous a également permis de mieux comprendre les différents aspects du développement de jeux. L’organisation du travail de chacun à été décidé en fonction des compétences de chacun et avec l’accord de chaque personne pour que tout le monde prenne du plaisir dans cet évènement. </span>
-
-                    </div>
-                    <div class="container_projet">
-                        <img src="images/mastermingjpg.jpg" class = "images_projets">
+                <a class="container_projet" href="mastermind.html" draggable="false">
+                    <div>
+                        <img src="images/mast.jpg" class = "images_projets" alt="mastermind" draggable="false">
                         <h3>MasterMind</h3>
-                        <span>
-                            Le MasterMind est un travail donné par l'IUT, qui servait à nous entraîner à coder en Java en reprenant les règles du jeu de base. C'était par groupe de 2 et cela nous a montré pour la première fois que le travail en équipe est loin d'être évident. Mon partenaire et moi avons dû apprendre à communiquer efficacement et à coordonner nos efforts pour développer le jeu. Nous avons rencontré des défis, notamment en matière de répartition des tâches et de résolution de conflits lors de divergences d'opinions sur certaines fonctions du jeu.</span>
+
 
                     </div>
-                    <div class="container_projet">
-                        <img src="images/siteSAE.png" class="images_projets">
+                </a>
+                <a href="site.html" class="container_projet" draggable="false">
+                    <div>
+                        <img src="images/saeSite.png" class="images_projets" alt="SAE" draggable="false">
                         <h3>Création d'un site d'offre d'alternance/stage</h3>
-                        <span>Travail donné par l'IUT, où nous devions produire un site web pour les offre de stages/d'alternance pour les étudiants, en mêlant SQL, HTML, CSS,PHP ainsi queJavascript. Nous étions en situation réelle avec un client en étant en méthode agile, avec 4 sprints chacuns suivis par une revue avec le client. C'était notre premier gros projet avec autant de personnes. </span>
                     </div>
-                    
+                </a>
+
+                <a class="container_projet" href="trello.html" draggable="false">
+                    <div>
+                        <img src="images/s2.png" class="images_projets" alt="Trello-Trollé" draggable="false">
+                        <h3>Amélioration d'un site type Trello</h3>
+                    </div>
+                </a>
                 </div>
             </div>
         </div>
