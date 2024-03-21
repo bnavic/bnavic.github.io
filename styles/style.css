@@ -61,6 +61,8 @@
     transition: all 0.5s ease;
   }
 
+
+
   .navlinks ul{
     display: flex;
     flex-direction: column;
@@ -426,6 +428,23 @@ p{
   border-radius: 20px;
   padding: 5px;
 }
+
+.claire{
+  background-color: white;
+}
+
+#presentation{
+  display: flex;
+}
+
+.carrePres{
+  border-radius: 20px;
+  color: black;
+  max-width: 50%;
+  padding:10px 40px;
+  margin-left: 50px;
+}
+
 
 #text{
   padding: 5px;
