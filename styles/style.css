@@ -247,6 +247,7 @@ p{
 .images_icones{
   width: 100%;
   height: 100%;
+  object-fit: contain;
 }
 
 
@@ -443,9 +444,14 @@ p{
   max-width: 50%;
   padding:10px 40px;
   margin-left: 50px;
+  margin-right: 50px;
 }
 
 
 #text{
   padding: 5px;
+}
+
+.souligne{
+  text-decoration: underline;
 }
