@@ -455,3 +455,15 @@ p{
 .souligne{
   text-decoration: underline;
 }
+
+.mid{
+  justify-content: center;
+  justify-items: center;
+  
+}
+
+.none{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
